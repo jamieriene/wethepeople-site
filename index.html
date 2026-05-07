@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We the People — Campaign in a Box for first-time challengers</title>
+<meta name="description" content="#wethepeople · A research-backed campaign website for first-time Democratic and independent challengers in red states. $1,000. No discovery call required.">
+
+<meta property="og:title" content="We the People — Campaign in a Box">
+<meta property="og:description" content="A research-backed campaign website for first-time challengers in red states. $1,000. One client per week. No call required.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wethepeople.gingeralchemy.com">
+<meta property="og:image" content="https://wethepeople.gingeralchemy.com/jamie.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --deep-purple:#382B5B;
+  --deep-purple-2:#4A3D6B;
+  --light-purple:#8678A6;
+  --copper:#BD8B7B;
+  --copper-2:#C6A59B;
+  --copper-light:#E8D3CC;
+  --orange:#E67E49;
+  --orange-2:#EB956A;
+  --cream:#F5F0E8;
+  --navy:#1D2951;
+  --white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Lato',system-ui,sans-serif;
+  color:var(--navy);
+  background:var(--cream);
+  line-height:1.6;
+  font-size:18px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;color:var(--deep-purple);line-height:1.2;font-weight:700}
+h1{font-size:clamp(2rem,6vw,3.75rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:clamp(1.6rem,4.5vw,2.5rem);margin-bottom:1rem}
+h3{font-size:clamp(1.2rem,3vw,1.5rem);margin-bottom:0.5rem;font-weight:600}
+p{margin-bottom:1rem}
+a{color:var(--copper);text-decoration:none}
+a:hover{color:var(--orange)}
+.container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.narrow{max-width:780px;margin:0 auto}
+
+/* Sticky nav */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,240,232,0.95);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--copper-light);
+  padding:0.85rem 0;
+}
+nav .container{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:'Poppins',sans-serif;font-weight:700;color:var(--deep-purple);font-size:1rem;letter-spacing:-0.01em}
+.logo span{color:var(--orange)}
+.nav-cta{
+  background:var(--orange);color:var(--white);
+  padding:0.55rem 1.1rem;border-radius:10px;
+  font-weight:600;font-size:0.9rem;
+  transition:background 0.2s;
+}
+.nav-cta:hover{background:var(--orange-2);color:var(--white)}
+
+/* Hero */
+.hero{
+  padding:5rem 0 4rem;
+  background:linear-gradient(180deg,var(--cream) 0%,#FAF6EE 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;top:-100px;right:-100px;
+  width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(230,126,73,0.15) 0%,transparent 70%);
+  pointer-events:none;
+}
+.eyebrow{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;font-weight:600;
+  color:var(--orange);font-size:0.85rem;
+  letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:1rem;
+}
+.hero h1 .accent{color:var(--orange)}
+.hero p.lead{
+  font-size:clamp(1.1rem,2.5vw,1.35rem);
+  color:var(--navy);
+  margin:1.5rem 0 2.25rem;
+  max-width:680px;
+}
+.cta-row{display:flex;flex-wrap:wrap;gap:0.85rem;align-items:center}
+.btn{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;font-weight:600;
+  padding:0.95rem 1.6rem;border-radius:12px;
+  font-size:1rem;
+  transition:all 0.2s;
+  border:2px solid transparent;
+  cursor:pointer;
+}
+.btn-primary{background:var(--orange);color:var(--white)}
+.btn-primary:hover{background:var(--orange-2);color:var(--white);transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:var(--deep-purple);border-color:var(--deep-purple)}
+.btn-secondary:hover{background:var(--deep-purple);color:var(--white)}
+.hero-meta{
+  font-size:0.95rem;color:var(--deep-purple-2);
+  margin-top:1.25rem;
+}
+.hero-meta span{color:var(--copper);font-weight:600}
+
+/* Section base */
+section{padding:4.5rem 0}
+.section-cream{background:var(--cream)}
+.section-white{background:var(--white)}
+.section-purple{background:var(--deep-purple);color:var(--cream)}
+.section-purple h2,.section-purple h3{color:var(--white)}
+.section-purple a{color:var(--orange-2)}
+.kicker{
+  font-family:'Poppins',sans-serif;font-weight:600;
+  color:var(--copper);font-size:0.85rem;
+  letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:0.75rem;
+}
+.section-purple .kicker{color:var(--orange)}
+
+/* Problem grid */
+.problem-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.25rem;margin-top:2rem;
+}
+.problem-card{
+  background:var(--white);
+  padding:1.5rem;
+  border-radius:14px;
+  border-left:4px solid var(--orange);
+  box-shadow:0 2px 8px rgba(56,43,91,0.06);
+}
+.problem-card h3{font-size:1.1rem;color:var(--deep-purple)}
+.problem-card p{font-size:0.95rem;margin-bottom:0;color:var(--navy)}
+
+/* Box list */
+.box-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.25rem;margin-top:2rem;
+}
+.box-item{
+  background:var(--cream);
+  padding:1.5rem;
+  border-radius:14px;
+  border:2px solid transparent;
+  transition:border-color 0.2s;
+}
+.box-item:hover{border-color:var(--copper)}
+.box-icon{
+  width:42px;height:42px;
+  background:linear-gradient(135deg,var(--orange) 0%,var(--copper) 100%);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  color:white;font-weight:700;margin-bottom:0.85rem;font-size:1.1rem;
+  font-family:'Poppins',sans-serif;
+}
+.box-item h3{font-size:1.1rem}
+.box-item p{font-size:0.95rem;margin-bottom:0}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-top:2rem;counter-reset:step}
+.step{
+  background:var(--white);
+  padding:1.75rem 1.5rem;border-radius:14px;
+  position:relative;counter-increment:step;
+  box-shadow:0 2px 8px rgba(56,43,91,0.06);
+}
+.step::before{
+  content:counter(step);
+  position:absolute;top:-16px;left:1.25rem;
+  width:36px;height:36px;border-radius:50%;
+  background:var(--deep-purple);color:white;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:1rem;
+}
+.step h3{font-size:1.05rem;margin-top:0.6rem}
+.step p{font-size:0.92rem;margin-bottom:0;color:var(--navy)}
+
+/* Proof / Letisha */
+.proof{
+  background:linear-gradient(135deg,var(--deep-purple) 0%,var(--deep-purple-2) 100%);
+  color:var(--cream);
+  padding:4.5rem 0;
+}
+.proof h2{color:var(--white)}
+.proof-grid{
+  display:grid;grid-template-columns:1fr;gap:2rem;
+  align-items:center;margin-top:2rem;
+}
+@media(min-width:760px){.proof-grid{grid-template-columns:1.1fr 1fr}}
+.proof-quote{font-size:1.15rem;font-style:italic;color:var(--copper-light);border-left:3px solid var(--orange);padding-left:1.25rem;margin:1.25rem 0}
+.proof-link{
+  display:inline-block;background:var(--orange);color:var(--white);
+  padding:0.85rem 1.4rem;border-radius:10px;
+  font-family:'Poppins',sans-serif;font-weight:600;
+}
+.proof-link:hover{background:var(--orange-2);color:var(--white)}
+.proof-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(189,139,123,0.3);
+  border-radius:14px;padding:1.5rem;
+}
+.proof-card h4{color:var(--orange);font-family:'Poppins',sans-serif;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem}
+.proof-card ul{list-style:none;padding:0}
+.proof-card li{padding:0.4rem 0;color:var(--cream);font-size:0.95rem;border-bottom:1px solid rgba(189,139,123,0.15)}
+.proof-card li:last-child{border-bottom:none}
+
+/* Story / Why */
+.story{background:var(--cream)}
+.story-card{
+  background:var(--white);
+  padding:2rem;border-radius:14px;
+  border-top:4px solid var(--orange);
+  max-width:780px;margin:2rem auto 0;
+  box-shadow:0 4px 16px rgba(56,43,91,0.08);
+}
+.story-card p{font-size:1.05rem;margin-bottom:1.1rem}
+.story-card p:last-child{margin-bottom:0}
+.story-sig{
+  font-family:'Poppins',sans-serif;
+  color:var(--deep-purple);font-weight:600;
+  margin-top:1.5rem !important;
+}
+.story-sig small{display:block;font-weight:400;color:var(--copper);font-size:0.9rem;margin-top:0.25rem;font-family:'Lato',sans-serif}
+.story-card .punch{
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  font-size:1.2rem;
+  color:var(--deep-purple);
+  margin:0.4rem 0 1.4rem;
+  line-height:1.3;
+}
+.story-card .punch.closer{
+  font-size:1.4rem;
+  color:var(--orange);
+  font-weight:700;
+  margin-top:1rem;
+}
+.story-photo{
+  margin:2rem auto 1.5rem;
+  text-align:center;
+  max-width:320px;
+}
+.story-photo img{
+  width:100%;height:auto;display:block;
+  border-radius:14px;
+  border:5px solid var(--white);
+  box-shadow:0 12px 32px rgba(56,43,91,0.18);
+}
+.story-photo figcaption{
+  margin-top:0.85rem;
+  font-size:0.85rem;
+  color:var(--copper);
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+}
+
+/* Hero trust microcopy */
+.hero-trust{
+  list-style:none;padding:0;margin:0.85rem 0 0;
+  display:flex;flex-wrap:wrap;gap:0.5rem 1.5rem;
+  font-size:0.92rem;color:var(--deep-purple-2);
+}
+.hero-trust li{
+  display:flex;align-items:center;gap:0.45rem;
+  font-family:'Poppins',sans-serif;font-weight:500;
+}
+.hero-trust li::before{
+  content:"";display:inline-block;
+  width:8px;height:8px;border-radius:50%;
+  background:var(--orange);flex-shrink:0;
+}
+
+/* Capacity banner */
+.capacity-banner{
+  max-width:880px;margin:0 auto 1.75rem;
+  background:var(--cream);
+  border:2px dashed var(--copper);
+  border-radius:12px;
+  padding:0.95rem 1.25rem;
+  display:flex;align-items:center;gap:0.85rem;
+  font-size:0.95rem;color:var(--deep-purple);
+}
+.capacity-banner .dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--orange);flex-shrink:0;
+  box-shadow:0 0 0 4px rgba(230,126,73,0.25);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 4px rgba(230,126,73,0.25)}
+  50%{box-shadow:0 0 0 7px rgba(230,126,73,0.12)}
+}
+.capacity-banner strong{color:var(--deep-purple);font-family:'Poppins',sans-serif}
+
+/* Browser-frame screenshot */
+.proof-screenshot{
+  max-width:1080px;
+  margin:2rem auto 0;
+  border-radius:12px 12px 8px 8px;
+  background:#f0f0f0;
+  box-shadow:0 30px 70px rgba(0,0,0,0.45),0 0 0 1px rgba(255,255,255,0.06);
+  overflow:hidden;
+}
+.browser-bar{
+  background:linear-gradient(180deg,#f3f3f3,#e4e4e4);
+  padding:0.7rem 1rem;
+  display:flex;align-items:center;gap:1rem;
+  border-bottom:1px solid #d0d0d0;
+}
+.browser-dots{display:flex;gap:0.45rem;flex-shrink:0}
+.browser-dots span{
+  width:12px;height:12px;border-radius:50%;
+  display:block;
+}
+.browser-dots span:nth-child(1){background:#ff5f56}
+.browser-dots span:nth-child(2){background:#ffbd2e}
+.browser-dots span:nth-child(3){background:#27c93f}
+.browser-url{
+  background:white;
+  border-radius:6px;
+  padding:0.4rem 0.85rem;
+  font-size:0.82rem;
+  color:#333;
+  flex:1;max-width:380px;
+  text-align:center;
+  border:1px solid #d8d8d8;
+  font-family:'Lato',monospace;
+  letter-spacing:0.01em;
+}
+.proof-screenshot img{
+  width:100%;height:auto;display:block;
+  background:white;
+}
+.proof-caption{
+  text-align:center;
+  margin-top:1.25rem;
+  font-size:0.92rem;
+  color:var(--copper-light);
+  font-family:'Poppins',sans-serif;
+  font-weight:500;
+}
+.proof-caption a{color:var(--orange);font-weight:600}
+@media(max-width:560px){
+  .browser-url{max-width:none;font-size:0.72rem;padding:0.3rem 0.55rem}
+  .browser-bar{padding:0.55rem 0.75rem;gap:0.6rem}
+  .browser-dots span{width:9px;height:9px}
+}
+
+/* Intake form */
+.intake-section{
+  background:linear-gradient(135deg,var(--orange) 0%,var(--copper) 100%);
+  color:white;text-align:center;padding:5rem 0;
+}
+.intake-section h2{color:var(--white);font-size:clamp(1.8rem,5vw,2.75rem);margin-bottom:1rem}
+.intake-section .lead{font-size:1.1rem;margin-bottom:2.5rem;max-width:640px;margin-left:auto;margin-right:auto}
+.intake-form{
+  max-width:560px;margin:0 auto;
+  background:var(--white);
+  border-radius:18px;
+  padding:2.5rem 2rem;
+  box-shadow:0 20px 50px rgba(56,43,91,0.25);
+  text-align:left;
+  color:var(--navy);
+}
+.intake-form .field{margin-bottom:1.25rem}
+.intake-form label{
+  display:block;
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  color:var(--deep-purple);
+  font-size:0.9rem;
+  margin-bottom:0.4rem;
+}
+.intake-form label .req{color:var(--orange)}
+.intake-form .helper{
+  font-size:0.82rem;color:var(--copper);
+  margin-bottom:0.5rem;
+  font-style:italic;
+}
+.intake-form input[type="text"],
+.intake-form input[type="email"],
+.intake-form textarea{
+  width:100%;
+  padding:0.75rem 0.9rem;
+  font-family:'Lato',sans-serif;
+  font-size:1rem;
+  border:2px solid var(--copper-light);
+  border-radius:10px;
+  background:var(--cream);
+  color:var(--navy);
+  transition:border-color 0.2s,background 0.2s;
+}
+.intake-form input:focus,
+.intake-form textarea:focus{
+  outline:none;
+  border-color:var(--orange);
+  background:white;
+}
+.intake-form textarea{
+  resize:vertical;
+  min-height:90px;
+}
+.intake-form .submit-btn{
+  width:100%;
+  background:var(--deep-purple);
+  color:white;
+  font-family:'Poppins',sans-serif;
+  font-weight:600;
+  font-size:1.05rem;
+  padding:1rem 1.5rem;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  transition:background 0.2s,transform 0.1s;
+  margin-top:0.5rem;
+}
+.intake-form .submit-btn:hover{
+  background:var(--deep-purple-2);
+  transform:translateY(-1px);
+}
+.intake-form .submit-btn:disabled{
+  opacity:0.6;
+  cursor:not-allowed;
+  transform:none;
+}
+.intake-form .form-note{
+  font-size:0.85rem;
+  color:var(--deep-purple-2);
+  text-align:center;
+  margin-top:1rem;
+  margin-bottom:0;
+  line-height:1.5;
+}
+.intake-form .error-msg{
+  background:#FAF1ED;
+  border:1px solid var(--copper);
+  color:var(--deep-purple);
+  padding:0.75rem 1rem;
+  border-radius:8px;
+  margin-bottom:1rem;
+  font-size:0.9rem;
+  display:none;
+}
+.intake-form .error-msg.show{display:block}
+
+/* #wethepeople callout */
+.hashtag-callout{
+  max-width:780px;margin:1.75rem auto 0;
+  background:linear-gradient(135deg,var(--orange) 0%,var(--copper) 100%);
+  color:var(--white);
+  border-radius:14px;padding:1.75rem 2rem;
+  text-align:center;
+  box-shadow:0 6px 20px rgba(230,126,73,0.25);
+}
+.hashtag-callout .hash{
+  font-family:'Poppins',sans-serif;font-weight:800;
+  font-size:clamp(1.4rem,3.5vw,1.85rem);
+  display:block;margin-bottom:0.5rem;letter-spacing:-0.01em;
+}
+.hashtag-callout p{
+  margin-bottom:0;
+  font-size:1.05rem;
+  color:var(--white);
+  max-width:560px;margin-left:auto;margin-right:auto;
+}
+
+/* Pricing */
+.pricing{background:var(--white)}
+.price-grid{
+  display:grid;grid-template-columns:1fr;gap:1.25rem;
+  margin-top:2.5rem;max-width:880px;margin-left:auto;margin-right:auto;
+}
+@media(min-width:720px){.price-grid{grid-template-columns:1.4fr 1fr}}
+.price-card{
+  background:var(--cream);
+  border-radius:18px;padding:2rem;
+  position:relative;
+  border:2px solid transparent;
+}
+.price-card.featured{
+  background:linear-gradient(135deg,var(--deep-purple) 0%,var(--deep-purple-2) 100%);
+  color:var(--cream);border-color:var(--orange);
+}
+.price-card.featured h3{color:var(--white)}
+.price-card.featured .price{color:var(--orange)}
+.price-tag{
+  display:inline-block;background:var(--orange);color:var(--white);
+  padding:0.25rem 0.7rem;border-radius:6px;font-size:0.75rem;
+  font-family:'Poppins',sans-serif;font-weight:600;
+  letter-spacing:0.08em;text-transform:uppercase;
+  margin-bottom:0.75rem;
+}
+.price{font-family:'Poppins',sans-serif;font-weight:800;font-size:2.5rem;color:var(--deep-purple);line-height:1;margin:0.25rem 0 0.5rem}
+.price small{font-size:0.95rem;font-weight:500;color:var(--copper);display:block;margin-top:0.4rem}
+.price-card.featured .price small{color:var(--copper-light)}
+.price-card ul{list-style:none;padding:0;margin:1.25rem 0}
+.price-card li{padding:0.45rem 0;font-size:0.97rem;display:flex;gap:0.5rem;align-items:flex-start}
+.price-card li::before{content:"✓";color:var(--orange);font-weight:700;flex-shrink:0}
+.price-card.featured .btn-primary{background:var(--orange)}
+.price-card.featured .btn-primary:hover{background:var(--orange-2)}
+.add-on{
+  margin-top:0.75rem;font-size:0.95rem;color:var(--navy);
+}
+.price-card.featured .add-on{color:var(--copper-light)}
+.milestones{margin:1.5rem 0}
+.milestone{
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.13);
+  border-radius:10px;
+  padding:1rem 1.1rem;
+  margin-bottom:0.75rem;
+}
+.milestone:last-child{margin-bottom:0}
+.milestone-amount{
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  color:var(--orange);
+  font-size:1rem;
+  margin-bottom:0.35rem;
+  letter-spacing:-0.01em;
+}
+.milestone p{
+  font-size:0.92rem;
+  margin-bottom:0;
+  color:var(--copper-light);
+  line-height:1.5;
+}
+
+/* Fit / Not fit */
+.fit-grid{
+  display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:2rem;
+}
+@media(min-width:720px){.fit-grid{grid-template-columns:1fr 1fr}}
+.fit-col{padding:1.75rem;border-radius:14px}
+.fit-yes{background:#EFF7F0;border-left:4px solid #4F8C5C}
+.fit-no{background:#FAF1ED;border-left:4px solid var(--copper)}
+.fit-col h3{font-size:1.15rem;margin-bottom:1rem}
+.fit-col ul{list-style:none;padding:0}
+.fit-col li{padding:0.45rem 0;display:flex;gap:0.5rem;align-items:flex-start;font-size:0.97rem}
+.fit-yes li::before{content:"✓";color:#4F8C5C;font-weight:700;flex-shrink:0}
+.fit-no li::before{content:"–";color:var(--copper);font-weight:700;flex-shrink:0}
+
+/* FAQ */
+.faq{background:var(--cream)}
+.faq-item{
+  background:var(--white);
+  border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:0.85rem;
+  box-shadow:0 1px 4px rgba(56,43,91,0.05);
+}
+.faq-item summary{
+  cursor:pointer;font-family:'Poppins',sans-serif;font-weight:600;
+  color:var(--deep-purple);font-size:1.05rem;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.faq-item summary::after{
+  content:"+";color:var(--orange);font-size:1.5rem;font-weight:300;
+  transition:transform 0.2s;flex-shrink:0;
+}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item p{margin-top:1rem;margin-bottom:0;color:var(--navy);font-size:0.97rem}
+
+/* Final CTA */
+.final-cta{
+  background:linear-gradient(135deg,var(--orange) 0%,var(--copper) 100%);
+  color:white;text-align:center;padding:5rem 0;
+}
+.final-cta h2{color:var(--white);font-size:clamp(1.8rem,5vw,2.75rem);margin-bottom:1rem}
+.final-cta p{font-size:1.15rem;margin-bottom:2rem;max-width:640px;margin-left:auto;margin-right:auto}
+.final-cta .btn{background:var(--white);color:var(--deep-purple);font-size:1.1rem;padding:1.1rem 2rem}
+.final-cta .btn:hover{background:var(--cream);color:var(--deep-purple);transform:translateY(-2px)}
+.final-cta-note{font-size:0.9rem;margin-top:1rem;opacity:0.9}
+
+/* Footer */
+footer{
+  background:var(--deep-purple);
+  color:var(--copper-light);
+  padding:3rem 0 2rem;font-size:0.92rem;
+}
+footer a{color:var(--orange-2)}
+footer a:hover{color:var(--white)}
+.footer-grid{
+  display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:2rem;
+}
+@media(min-width:720px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}
+.footer-grid h4{color:var(--white);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;font-weight:600}
+.footer-grid ul{list-style:none;padding:0}
+.footer-grid li{padding:0.25rem 0}
+.footer-bottom{
+  border-top:1px solid var(--deep-purple-2);
+  padding-top:1.25rem;
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;
+  font-size:0.85rem;
+}
+.footer-bottom span{color:var(--light-purple)}
+
+/* Mobile tweaks */
+@media(max-width:560px){
+  section{padding:3.25rem 0}
+  .hero{padding:3.5rem 0 3rem}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .btn{text-align:center;width:100%}
+  .nav-cta{width:auto}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">We the People<span>.</span></div>
+    <a href="#start" class="nav-cta">Start — $250</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="eyebrow">#wethepeople · Campaign in a Box</span>
+    <h1>Your race deserves a website built for the <span class="accent">fight you're actually in.</span></h1>
+    <p class="lead">A research-backed campaign website for first-time Democratic and independent challengers running in red states. Built on real district data and your own words — captured from a personalized Q&amp;A, not a recycled template.</p>
+    <div class="cta-row">
+      <a href="#start" class="btn btn-primary">Start your Campaign in a Box — $250 today</a>
+      <a href="#how-it-works" class="btn btn-secondary">See how it works</a>
+    </div>
+    <p class="hero-meta"><span>$1,000 total in three milestones.</span> You set the pace between them.</p>
+    <ul class="hero-trust">
+      <li>No discovery call</li>
+      <li>Materials yours forever</li>
+      <li>One client per week</li>
+    </ul>
+  </div>
+</header>
+
+<section class="section-cream">
+  <div class="container">
+    <div class="narrow">
+      <span class="kicker">If you're running for the first time</span>
+      <h2>You're up against $50,000 agencies with a $5,000 budget.</h2>
+      <p>You're knocking doors, raising money on Venmo, recruiting volunteers, and in your spare time trying to make your campaign website not look like every other Wix template in the state. Meanwhile your opponent has a paid consultant, a six-figure war chest, and an existing donor list.</p>
+      <p>You don't need a Cadillac. You need something <strong>credible, specific to your district, and built fast</strong> — so you can get back to the part only you can do: talking to voters.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <h3>Most templates ignore your district</h3>
+        <p>Generic "fighting for working families" copy doesn't tell voters what's actually broken in <em>their</em> county.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Discovery calls eat your week</h3>
+        <p>You don't have time for ten hour-long calls before you see a draft. You have doors to knock.</p>
+      </div>
+      <div class="problem-card">
+        <h3>CashApp doesn't inspire donors</h3>
+        <p>Out-of-state donors won't give to a campaign that looks unprofessional. ActBlue is the standard.</p>
+      </div>
+      <div class="problem-card">
+        <h3>Agencies cost more than your race raised</h3>
+        <p>$15K – $50K websites are out of reach. So is a website that converts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-white">
+  <div class="container">
+    <div class="narrow" style="text-align:center">
+      <span class="kicker">What's in the box</span>
+      <h2>Everything a first-time challenger actually needs.</h2>
+      <p>Every Campaign in a Box starts with district-specific research, captures your real voice through a research-informed Q&amp;A, and delivers a custom site — not a template with your name swapped in.</p>
+    </div>
+
+    <div class="box-grid">
+      <div class="box-item">
+        <div class="box-icon">1</div>
+        <h3>District research brief</h3>
+        <p>Demographics, cost of living, voting record analysis of the incumbent, donor and PAC breakdowns, local issues. All sourced.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-icon">2</div>
+        <h3>Race-specific Q&amp;A</h3>
+        <p>Custom interview questions built from the research. You answer them on your own time — written or voice memo. <strong>Your answers become the copy on your site.</strong></p>
+      </div>
+      <div class="box-item">
+        <div class="box-icon">3</div>
+        <h3>Custom website in your voice</h3>
+        <p>Mobile-first, fast, and accessible. Every section — hero, story, issues, accountability, take action — written from your actual Q&amp;A answers. Your voice, not a copywriter's.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-icon">4</div>
+        <h3>ActBlue donate integration</h3>
+        <p>Replaces CashApp or Venmo. Built-in fraud protection, FEC compliance, and recurring donations.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-icon">5</div>
+        <h3>Volunteer + email signup</h3>
+        <p>Real signup flows you can actually use to organize. No "contact us" black holes.</p>
+      </div>
+      <div class="box-item">
+        <div class="box-icon">6</div>
+        <h3>Unlimited revisions for 3 business days</h3>
+        <p>You review the draft and send as many rounds of notes as you need. I wrap everything inside the 3-day window. Then it's yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream" id="how-it-works">
+  <div class="container">
+    <div class="narrow" style="text-align:center">
+      <span class="kicker">How it works</span>
+      <h2>Four steps. No phone tag.</h2>
+      <p>This is built to be hands-off so you can keep running your campaign instead of project-managing your website.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Start with $250</h3>
+        <p>Stripe collects your non-refundable deposit. Within 24–48 hours, your district research, race-specific Q&amp;A, and a "gather this" checklist (domain, photos, etc.) land in your inbox.</p>
+      </div>
+      <div class="step">
+        <h3>Prep on your schedule</h3>
+        <p>Take whatever time you need. Voice-memo your Q&amp;A answers — ramble, speak from the heart, no editing required. <strong>Those answers become the copy on your website.</strong> Pick your domain, pull together photos, the next move is yours when you're ready.</p>
+      </div>
+      <div class="step">
+        <h3>Book your week — $500</h3>
+        <p>When you have everything ready, pay $500 and lock a build week on my calendar. I take one client per week. That week, the site gets built — you have my full attention.</p>
+      </div>
+      <div class="step">
+        <h3>Launch — final $250</h3>
+        <p>Site delivered, revisions wrapped in 3 business days, deployed to your domain. Optional 30-minute handoff call on the final day. Final payment, and it's yours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="container">
+    <div style="text-align:center;max-width:780px;margin:0 auto">
+      <span class="kicker">Real campaign, real launch</span>
+      <h2>See what this actually looks like.</h2>
+    </div>
+
+    <figure class="proof-screenshot">
+      <div class="browser-bar">
+        <div class="browser-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="browser-url">letishaforarkansas.com</div>
+      </div>
+      <img src="letisha-site.jpg" alt="Letisha Hinds campaign website hero — Arkansas House District 16, with the tagline 'Your neighbor. Running for all of us.' and Donate Now and Meet Letisha calls to action" loading="lazy" width="1400" height="782">
+    </figure>
+    <p class="proof-caption"><a href="https://letishaforarkansas.com" target="_blank" rel="noopener">View the live site →</a></p>
+
+    <div class="proof-grid" style="grid-template-columns:1fr;margin-top:3rem;max-width:780px">
+      <div>
+        <p>Letisha Hinds is a first-time Democratic challenger running for Arkansas State House in District 16. Her Campaign in a Box went live with a research-driven Issues section, an accountability page tracking the incumbent's voting record, and ActBlue integration replacing the CashApp link her primary opponent used.</p>
+        <p class="proof-quote">Lead with the candidate's story. Anchor every issue in real district data. Give voters something specific to grip onto. That's the whole formula.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="container">
+    <div style="text-align:center">
+      <span class="kicker">Why this exists</span>
+      <h2>I'm not a campaign consultant.</h2>
+    </div>
+
+    <figure class="story-photo">
+      <img src="jamie.jpg" alt="Jamie Stephens at a #NoKings rally in Northwest Arkansas, holding a hand-painted Choose Humanity sign" loading="lazy" width="600" height="800">
+      <figcaption>Rogers, Arkansas · #NoKings NWA</figcaption>
+    </figure>
+
+    <div class="story-card">
+      <p>My name is Jamie Stephens.</p>
+      <p>By day, I've spent years inside supply chain, CPG, retail data, and operations — the very unsexy world of making complicated systems actually work.</p>
+      <p class="punch">On time. On budget. At scale.</p>
+      <p>I've worked behind brands you've bought groceries from, learned how complex systems break, and built a career translating chaos into something usable.</p>
+      <p class="punch">Then AI got real.</p>
+      <p>And I started layering it onto the skills I already had: systems thinking, data analysis, web development, automation, and the ability to take a messy problem and build a practical path through it.</p>
+      <p>That eventually became Ginger Alchemy, where I teach small business owners how to use AI to solve real problems — not chase hype, not collect tools, not pretend the future is coming later.</p>
+      <p class="punch">It's already here.</p>
+      <p class="punch">But I'm also a mom.</p>
+      <p>I live in Rogers, Arkansas. I have four daughters. And I'm watching them grow up in a state that ranks dead last or near-last in maternal mortality, infant mortality, teen birth rates, and child well-being.</p>
+      <p>I'm watching my own girls talk about leaving Arkansas because they're terrified of what getting pregnant here could mean for them.</p>
+      <p class="punch">That is not political theory to me.</p>
+      <p>That is my kitchen table. That is my family. That is the future my daughters are already trying to plan around.</p>
+      <p>So I decided to use the skills I actually have — supply chain, systems, AI, data, web, and plain old problem-solving — to build something useful for the people stepping up to run.</p>
+      <p class="punch">That's why Campaign in a Box exists.</p>
+      <p>Because every first-time Democratic or independent challenger in a red state deserves a real campaign website. Not a slapped-together Wix template. Not a $30,000 agency invoice. Not something that makes them look like they're playing pretend.</p>
+      <p>A real, research-backed, custom campaign site they can be proud of — built with strategy, speed, and respect for the reality of running a grassroots campaign.</p>
+      <p>Because good people like you are stepping up.</p>
+      <p class="punch closer">And you deserve better support.</p>
+    </div>
+
+    <div class="hashtag-callout">
+      <span class="hash">#wethepeople</span>
+      <p>A nod to every everyday American picking up whatever skills they have — supply chain, software, organizing, teaching, accounting, anything — and using them to take action for our country. Waiting for someone else to fix this isn't a plan.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="container">
+    <div class="narrow" style="text-align:center">
+      <span class="kicker">Pricing</span>
+      <h2>One package. Three milestones. You set the pace.</h2>
+      <p>$250 to lock in. $500 when you're ready for your build week. $250 on launch. No surprise charges, no scope creep.</p>
+    </div>
+
+    <div class="capacity-banner" role="note" aria-label="Capacity notice">
+      <span class="dot" aria-hidden="true"></span>
+      <span><strong>One client per week.</strong> Slots fill on a first-come basis — flag tight election deadlines at the deposit step and I'll help you grab the soonest available slot.</span>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card featured">
+        <span class="price-tag">The whole thing</span>
+        <h3>Campaign in a Box</h3>
+        <div class="price">$1,000<small>Three milestones · you set the pace</small></div>
+
+        <div class="milestones">
+          <div class="milestone">
+            <div class="milestone-amount">$250 — to start</div>
+            <p>Non-refundable deposit. Within 24–48 hours you receive your district research, race-specific Q&amp;A, and a checklist of what to gather: domain, photos, etc.</p>
+          </div>
+          <div class="milestone">
+            <div class="milestone-amount">$500 — to book your week</div>
+            <p>When you have everything ready, schedule a build week on my calendar. I take one client per week — that week is yours.</p>
+          </div>
+          <div class="milestone">
+            <div class="milestone-amount">$250 — on launch</div>
+            <p>Site goes live, revisions wrapped in 3 business days, optional 30-minute handoff call. Then it's yours.</p>
+          </div>
+        </div>
+
+        <a href="#start" class="btn btn-primary" style="width:100%;text-align:center">Start now — $250</a>
+      </div>
+
+      <div class="price-card">
+        <span class="price-tag" style="background:var(--copper)">Optional add-on</span>
+        <h3>Basic Branding</h3>
+        <div class="price">+$250<small>Paid up front with the deposit</small></div>
+        <ul>
+          <li>Simple custom logo</li>
+          <li>Brand color palette</li>
+          <li>Typography pairing</li>
+          <li>Social profile sizing</li>
+        </ul>
+        <p class="add-on">Add this if you don't already have a logo or brand. If you do, we'll use what you have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="container">
+    <div class="narrow" style="text-align:center">
+      <span class="kicker">Honest fit check</span>
+      <h2>Is this for you?</h2>
+    </div>
+
+    <div class="fit-grid">
+      <div class="fit-col fit-yes">
+        <h3>Yes, if you're…</h3>
+        <ul>
+          <li>A first-time Democratic or independent challenger</li>
+          <li>Running for state house, state senate, or local office in a red state</li>
+          <li>Running on a real grassroots budget (under $50K raised)</li>
+          <li>Comfortable answering written or voice-memo questions on your own time</li>
+          <li>Tired of your current site looking like every other campaign template</li>
+          <li>Ready to do the prep work yourself, then commit to one focused build week</li>
+        </ul>
+      </div>
+      <div class="fit-col fit-no">
+        <h3>Probably not, if you're…</h3>
+        <ul>
+          <li>An incumbent with an existing site you mostly like</li>
+          <li>Running a federal campaign with a six-figure communications budget</li>
+          <li>Looking for ongoing campaign management, not just a website</li>
+          <li>Expecting a discovery call, kickoff workshop, and weekly status meetings</li>
+          <li>Looking for a fundraising platform separate from your site (use ActBlue directly)</li>
+          <li>Not yet decided you're actually running</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <div class="narrow" style="text-align:center">
+      <span class="kicker">Questions worth asking</span>
+      <h2>FAQ</h2>
+    </div>
+
+    <div class="narrow" style="margin-top:2rem">
+      <details class="faq-item">
+        <summary>How fast does this actually move — and what do you need from me?</summary>
+        <p>The build itself is one dedicated week. <em>When</em> that week happens is up to you. After your $250 deposit, you receive your research, Q&amp;A, and gather-this checklist within 24–48 hours. From there, take whatever time you need to pick a domain, gather photos, and send your voice-memo answers. When you're ready, you pay $500 and book a build week on my calendar — I take one client per week, so available slots fill on a first-come basis. During that week, the site is built. Revisions wrap in 3 business days. Launch.</p>
+        <p><strong>The boundaries that make that work:</strong> I have a full-time job, so I run this during evenings and weekends, Central time. Email is the channel — replies within 1 business day. No discovery calls, no kickoffs, no weekly status meetings, no late-night emergencies. The build week is when work happens — outside that week, I'm focused on the candidate whose week it is. Tight election deadlines are welcome — flag it at the deposit step and I'll help you grab the soonest available slot.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I don't have a domain or hosting yet?</summary>
+        <p>Easy. Secure a domain through any reliable registrar (Namecheap, GoDaddy — whatever) and create a free Vercel account for hosting. Both take about ten minutes. Everything deploys under your accounts, in your name, so the site is yours from day one.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why no discovery call?</summary>
+        <p>Because you're running a campaign and you don't have time for one. The intake form and Q&amp;A capture everything I'd ask on a call — and they capture it in your written voice, which is exactly what the website needs to sound like. If something genuinely requires a call to unblock, we'll do a 15-minute one. But the default is async.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will this work if I'm running in a state that isn't Arkansas?</summary>
+        <p>Yes. The research approach is national — district demographics, voting records, donor data, and local cost of living are all publicly accessible in every state. Arkansas is just where I live and where the prototype was built.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I hate the draft?</summary>
+        <p>You have a 3-business-day window to send unlimited rounds of revisions. Most candidates use it for tone tweaks, copy adjustments, and a few photo or layout swaps. If something feels fundamentally off, that almost always traces back to rushed Q&amp;A answers — we'll talk it through and find the fix inside the same window. I'm not interested in shipping a site you don't believe in.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you do ongoing updates after launch?</summary>
+        <p>Not by default — and that's intentional. The optional 30-minute handoff call at the end of your build week is structured as a hands-on training. I walk you (or your campaign manager, or your most tech-comfortable volunteer) through how to update copy, swap photos, add events, and push changes live. By the end, you don't need me to make most updates yourself. For larger work later — adding a blog, a new section, integrations — email me and I'll quote it project by project. No retainers, no monthly fees you forget you're paying for.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is the deposit refundable?</summary>
+        <p>This is built around mutual commitment, not refunds. The $250 deposit is non-refundable — it pays for the research, Q&amp;A, and checklist that get delivered within 24–48 hours, regardless of whether you ever book a build week. If you decide not to schedule, the materials are still yours. Once you do book and pay $500, that week is reserved for you alone — I'm turning down other candidates for that slot, so it's also non-refundable. The final $250 is only paid after you've reviewed and approved the launched site. Special circumstances exist (true emergencies, illness, dropouts from the race) — email me and we'll figure it out person to person.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I never book my build week?</summary>
+        <p>No pressure from me. Your research, Q&amp;A, and checklist are yours forever — that's what the $250 paid for. If you decide later that you want to come back, you book a slot and pay $500 like everyone else. No urgency-marketing emails, no "limited time" reactivation fees, no penalty for taking your time. Real life happens.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Who owns the site?</summary>
+        <p>You do. Code, copy, design, all of it. It's deployed to your domain, on your hosting account, with your ActBlue link. If we part ways, you take everything with you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="intake-section" id="start">
+  <div class="container">
+    <h2>Ready to give your race a website it deserves?</h2>
+    <p class="lead">Quick details, then a $250 deposit. Your district research and custom Q&amp;A land in your inbox within 24–48 hours.</p>
+
+    <form id="intake-form" class="intake-form" method="POST" action="https://formspree.io/f/xaqvdnon" novalidate>
+      <div class="error-msg" id="form-error" role="alert"></div>
+
+      <div class="field">
+        <label for="name">Your full name <span class="req">*</span></label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+
+      <div class="field">
+        <label for="email">Email address <span class="req">*</span></label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="race">What race are you running for? <span class="req">*</span></label>
+        <p class="helper">Office, state, district — e.g., Arkansas State Senate, District 9 (Crittenden, Lee, Phillips, St. Francis Counties)</p>
+        <textarea id="race" name="race" required rows="2"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="election_date">When is your election?</label>
+        <p class="helper">Primary date, general date, or "TBD" if you're still deciding.</p>
+        <input type="text" id="election_date" name="election_date">
+      </div>
+
+      <div class="field">
+        <label for="urgent">Anything urgent we should know?</label>
+        <p class="helper">Tight election timeline, special circumstances, or anything you want me to know before research begins.</p>
+        <textarea id="urgent" name="urgent" rows="2"></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="New Campaign in a Box deposit">
+      <input type="hidden" name="_next" value="https://buy.stripe.com/8x2eVc78takPbBjftqgfu02">
+
+      <button type="submit" class="submit-btn" id="submit-btn">Continue to payment — $250</button>
+      <p class="form-note">$250 non-refundable deposit. Stripe handles checkout securely. You'll receive your research and Q&amp;A within 24–48 hours.</p>
+    </form>
+  </div>
+</section>
+
+<script>
+(function(){
+  var form = document.getElementById('intake-form');
+  if(!form) return;
+  var btn = document.getElementById('submit-btn');
+  var err = document.getElementById('form-error');
+  var STRIPE_URL = 'https://buy.stripe.com/8x2eVc78takPbBjftqgfu02';
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    err.classList.remove('show');
+
+    if(!form.checkValidity()){
+      err.textContent = 'Please fill in your name, email, and race details.';
+      err.classList.add('show');
+      form.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Submitting…';
+
+    var data = new FormData(form);
+    var email = data.get('email') || '';
+
+    try {
+      var resp = await fetch(form.action, {
+        method:'POST',
+        body:data,
+        headers:{'Accept':'application/json'}
+      });
+
+      if(resp.ok){
+        var redirect = STRIPE_URL + '?prefilled_email=' + encodeURIComponent(email);
+        window.location.href = redirect;
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch(ex) {
+      err.textContent = 'Something went wrong. Email jamie@gingeralchemy.com and we’ll sort it out.';
+      err.classList.add('show');
+      btn.disabled = false;
+      btn.textContent = 'Continue to payment — $250';
+    }
+  });
+})();
+</script>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:var(--white);margin-bottom:0.75rem">We the People<span>.</span></div>
+        <p style="color:var(--copper-light);font-size:0.9rem;max-width:340px">A Campaign in a Box product from Ginger Alchemy LLC. Built for first-time challengers running in red states.</p>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="https://gingeralchemy.com" target="_blank" rel="noopener">Ginger Alchemy</a></li>
+          <li><a href="https://letishaforarkansas.com" target="_blank" rel="noopener">Live example</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:jamie@gingeralchemy.com">jamie@gingeralchemy.com</a></li>
+          <li>Rogers, Arkansas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ginger Alchemy LLC</span>
+      <span>#wethepeople · Built by everyday Americans, for everyday Americans.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
