@@ -62,6 +62,18 @@ nav{
 nav .container{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .logo{font-family:'Poppins',sans-serif;font-weight:700;color:var(--deep-purple);font-size:1rem;letter-spacing:-0.01em}
 .logo span{color:var(--orange)}
+.logo-block{display:flex;flex-direction:column;gap:0.15rem;line-height:1}
+.logo-sub{
+  font-family:'Poppins',sans-serif;
+  font-weight:500;
+  color:var(--copper);
+  font-size:0.68rem;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  text-decoration:none;
+  line-height:1;
+}
+.logo-sub:hover{color:var(--orange)}
 .nav-cta{
   background:var(--orange);color:var(--white);
   padding:0.55rem 1.1rem;border-radius:10px;
@@ -625,7 +637,10 @@ footer a:hover{color:var(--white)}
 
 <nav>
   <div class="container">
-    <div class="logo">We the People<span>.</span></div>
+    <div class="logo-block">
+      <div class="logo">We the People<span>.</span></div>
+      <a class="logo-sub" href="https://gingeralchemy.com" target="_blank" rel="noopener">from Ginger Alchemy</a>
+    </div>
     <a href="#start" class="nav-cta">Start — $250</a>
   </div>
 </nav>
@@ -796,7 +811,7 @@ footer a:hover{color:var(--white)}
       <p>I've worked behind brands you've bought groceries from, learned how complex systems break, and built a career translating chaos into something usable.</p>
       <p class="punch">Then AI got real.</p>
       <p>And I started layering it onto the skills I already had: systems thinking, data analysis, web development, automation, and the ability to take a messy problem and build a practical path through it.</p>
-      <p>That eventually became Ginger Alchemy, where I teach small business owners how to use AI to solve real problems — not chase hype, not collect tools, not pretend the future is coming later.</p>
+      <p>That eventually became <a href="https://gingeralchemy.com" target="_blank" rel="noopener" style="color:var(--orange);font-weight:600;text-decoration:none;border-bottom:1px solid var(--copper-light)">Ginger Alchemy</a>, where I teach small business owners how to use AI to solve real problems — not chase hype, not collect tools, not pretend the future is coming later.</p>
       <p class="punch">It's already here.</p>
       <p class="punch">But I'm also a mom.</p>
       <p>I live in Rogers, Arkansas. I have four daughters. And I'm watching them grow up in a state that ranks dead last or near-last in maternal mortality, infant mortality, teen birth rates, and child well-being.</p>
