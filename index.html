@@ -362,6 +362,13 @@ section{padding:4.5rem 0}
   width:100%;height:auto;display:block;
   background:white;
 }
+.proof-screenshot-link{
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+a:hover .proof-screenshot-link{
+  transform:translateY(-4px);
+  box-shadow:0 40px 80px rgba(0,0,0,0.55),0 0 0 1px rgba(255,255,255,0.08);
+}
 .proof-caption{
   text-align:center;
   margin-top:1.25rem;
@@ -776,7 +783,8 @@ footer a:hover{color:var(--white)}
       <h2>See what this actually looks like.</h2>
     </div>
 
-    <figure class="proof-screenshot">
+    <a href="https://letishaforarkansas.com" target="_blank" rel="noopener" aria-label="View Letisha Hinds campaign website" style="display:block;text-decoration:none">
+    <figure class="proof-screenshot proof-screenshot-link">
       <div class="browser-bar">
         <div class="browser-dots" aria-hidden="true">
           <span></span><span></span><span></span>
@@ -785,6 +793,7 @@ footer a:hover{color:var(--white)}
       </div>
       <img src="letisha-site.jpg" alt="Letisha Hinds campaign website hero — Arkansas House District 16, with the tagline 'Your neighbor. Running for all of us.' and Donate Now and Meet Letisha calls to action" loading="lazy" width="1400" height="782">
     </figure>
+    </a>
     <p class="proof-caption"><a href="https://letishaforarkansas.com" target="_blank" rel="noopener">View the live site →</a></p>
 
     <div class="proof-grid" style="grid-template-columns:1fr;margin-top:3rem;max-width:780px">
