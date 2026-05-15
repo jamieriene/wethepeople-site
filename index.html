@@ -570,16 +570,16 @@ a:hover .proof-screenshot-link{
 }
 @media(min-width:720px){.fit-grid{grid-template-columns:1fr 1fr}}
 .fit-col{padding:1.75rem;border-radius:14px}
-.fit-yes{background:#EFF7F0;border-left:4px solid #4F8C5C}
-.fit-no{background:#FAF1ED;border-left:4px solid var(--copper)}
-.fit-col h3{font-size:1.15rem;margin-bottom:1rem}
+.fit-yes{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-top:4px solid #6DBF7E}
+.fit-no{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.10);border-top:4px solid var(--copper)}
+.fit-col h3{font-size:1.15rem;margin-bottom:1rem;color:var(--white)}
 .fit-col ul{list-style:none;padding:0}
-.fit-col li{padding:0.45rem 0;display:flex;gap:0.5rem;align-items:flex-start;font-size:0.97rem}
-.fit-yes li::before{content:"✓";color:#4F8C5C;font-weight:700;flex-shrink:0}
-.fit-no li::before{content:"–";color:var(--copper);font-weight:700;flex-shrink:0}
+.fit-col li{padding:0.45rem 0;display:flex;gap:0.5rem;align-items:flex-start;font-size:0.97rem;color:rgba(255,255,255,0.88)}
+.fit-yes li::before{content:"✓";color:#6DBF7E;font-weight:700;flex-shrink:0}
+.fit-no li::before{content:"–";color:var(--copper-light);font-weight:700;flex-shrink:0}
 
 /* FAQ */
-.faq{background:var(--cream)}
+.faq{background:var(--white)}
 .faq-item{
   background:var(--white);
   border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:0.85rem;
@@ -899,11 +899,11 @@ footer a:hover{color:var(--white)}
   </div>
 </section>
 
-<section class="section-cream">
+<section style="background:var(--deep-purple);padding:5rem 0">
   <div class="container">
     <div class="narrow" style="text-align:center">
-      <span class="kicker">Honest fit check</span>
-      <h2>Is this for you?</h2>
+      <span class="kicker" style="color:var(--copper-light)">Honest fit check</span>
+      <h2 style="color:var(--white)">Is this for you?</h2>
     </div>
 
     <div class="fit-grid">
